@@ -11,7 +11,7 @@ int main(void)
 	b = 2;
 	for (n = 0; n < 99; n++)
 	{
-		printf("lu", a);
+		printf("%lu", a);
 		if (n != 98)
 			printf(", ");
 		c = a + b;
