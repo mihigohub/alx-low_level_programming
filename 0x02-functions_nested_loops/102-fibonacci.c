@@ -12,7 +12,7 @@ int main(void)
 	b = 2;
 	for (n = 0; n < 50; n++)
 	{
-		printf("%lu", a);
+		printf("%u", a);
 		if (n != 49)
 			printf(", ");
 		c = a + b;
