@@ -1,0 +1,1 @@
+In C language, pointer is one of its powerful features a C programmer needs to master it well. Therefore this directory contains the works that focus on pointers, arrays vs each other between of them I have covered
