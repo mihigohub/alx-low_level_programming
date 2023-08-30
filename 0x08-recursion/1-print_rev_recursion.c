@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * print_rev_recursion - function that prints a string in reverse
+ * _print_rev_recursion - function that prints a string in reverse
  * @s: string that will be reversed
  * Return: void
  */
@@ -11,10 +11,11 @@ void _print_rev_recursion(char *s)
 
 	if (p == 0)
 	{
+		_putchar(*s);
+		_putchar(10);
 		return;
 	}
-	p--;
-	_putchar(*(s + (p - 1)));
-	_print_rev_recursion(s + (p - 1));
+	--p;
+	_putchar(*(s + p));
 }
 
