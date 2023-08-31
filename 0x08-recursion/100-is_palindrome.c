@@ -8,19 +8,20 @@ int _strlen_recursion(char *s)
 {
 	if (*s == '\0')
 		return (0);
-	return(1 + _strlen_recursion(s + 1));
+	return (1 + _strlen_recursion(s + 1));
 }
 /**
  * before_palindrome - function that check for palindrome
  * @s: string pointer
- * initial: starting index of pointer
- * last: last index in pointer
+ * @initial: starting index of pointer
+ * @last: last index in pointer
+ * Return: 1 for yes otherwise 0
  */
 int before_palindrome(char *s, int initial, int last)
 {
 	if (initial >= last)
 		return (1);
-	else if (s[initial] != s[_strlen_recursion(s) - 1])
+	else if (s[initial] != s[last])
 		return (0);
 	return (before_palindrome(s, initial + 1, last - 1));
 }
