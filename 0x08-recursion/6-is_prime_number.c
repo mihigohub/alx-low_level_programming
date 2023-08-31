@@ -8,7 +8,7 @@ int is_prime_number(int n)
 {
 	if (n < 0)
 		return (0);
-	return (before_prime(m, 2));
+	return (before_prime(n, 2));
 }
 /**
  * before_prime - function that check the prime number
