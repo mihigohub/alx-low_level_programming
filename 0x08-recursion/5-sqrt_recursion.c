@@ -11,6 +11,12 @@ int _sqrt_recursion(int n)
 		return (-1);
 	return (before_root(n, 0));
 }
+/**
+ * before_root - function that determine if there is a root for a given number
+ * @: number: first number to check its root
+ * @: root: root for first number
+ * Return: returns the root of the number
+ */
 int before_root(int number, int root)
 {
 	if ((root * root) > number)
