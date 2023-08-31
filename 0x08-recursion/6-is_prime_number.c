@@ -6,7 +6,13 @@
  */
 int is_prime_number(int n)
 {
-	return (before_prime(n, 2));
+	int m;
+
+	if (n < 0)
+		m = -n;
+	else
+		m = n;
+	return (before_prime(m, 2));
 }
 /**
  * before_prime - function that check the prime number
