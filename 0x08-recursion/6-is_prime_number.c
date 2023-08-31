@@ -6,12 +6,8 @@
  */
 int is_prime_number(int n)
 {
-	int m;
-
 	if (n < 0)
-		m = -n;
-	else
-		m = n;
+		return (0);
 	return (before_prime(m, 2));
 }
 /**
